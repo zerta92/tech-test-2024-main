@@ -8,15 +8,15 @@ To run tests, use:
 
 ## Running the Backend
 1. Navigate to the `backend` directory:  
-2. Install dependencies:  
-3. Start the backend server:  
+2. Install dependencies:  yarn install
+3. Start the backend server:  yarn start
 
 
 
 ## Running the Frontend
 1. Navigate to the `frontend` directory:  
-2. Install dependencies:  
-3. Start the frontend server:  
+2. Install dependencies:  yarn install
+3. Start the frontend server:  yarn start
 
 
 ## Accessing the App
