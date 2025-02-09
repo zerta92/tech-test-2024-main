@@ -40,7 +40,7 @@ export const parseMessage = (deliveryData: NextDelivery): Message => {
   const template = {
     title: `Your next delivery for ${formattedCats}`,
     message: `Hey ${humanRecipient}! In two days' time, we'll be charging you for your next order for ${formattedCats}'s fresh food.`,
-    totalPrice: `£${formattedPrice}`, // was not sure if we wanted the 2 decimals explicitly so I followed the example and forced them by making the price a string
+    totalPrice: `£${formattedPrice}`,
     freeGift: +formattedPrice > FREE_GIFT_THRESHOLD,
   };
 
