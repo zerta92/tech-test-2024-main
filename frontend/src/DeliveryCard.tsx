@@ -94,8 +94,8 @@ const DeliveryCard = () => {
 
         {deliveryData?.freeGift ? (
           <div
-            className="absolute bottom-0 right-0 md:top-0 md:right-0 font-bold px-2 py-1 rounded-bl-lg bg-pink-500 text-white"
-            style={{ height: `30px`, width: '30%' }}
+            className="absolute bottom-2 left-1/2 transform -translate-x-1/2 md:top-2 md:right-2 md:left-auto md:translate-x-0 font-bold px-2 py-1 rounded-lg bg-pink-500 text-white"
+            style={{ height: '30px' }}
           >
             FREE GIFT
           </div>
