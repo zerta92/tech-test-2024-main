@@ -24,4 +24,4 @@ Once both servers are running, open:
  - where the value after *welcome/* is the user id
 
 ## Thoughts on the Test
-I personally enjoyed the challenge and appreciated that the tasks were concise and straight to the point. Setting up the frontend and backend environments took a fair amount of time, so it might have been easier if some of this overhead was already taken care of.
+I personally enjoyed the challenge and appreciated that the tasks were concise and straight to the point. Setting up the frontend and backend environments took a fair amount of time, so it might have been easier if some of this overhead was already taken care of, but I can see why this would be part of the exercise.

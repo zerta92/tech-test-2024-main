@@ -34,13 +34,13 @@ export const parseMessage = (deliveryData: NextDelivery): Message => {
       ? `${catNames.slice(0, -1).join(', ')} and ${catNames[catNames.length - 1]}`
       : catNames[0];
 
-  //Handle edge cases where the sum could be a non monetary value i.e: 120.23453 - Should not happen based on existing pricing but just in case
+  //Handle edge cases where the sum could be a non monetary value i.e: 120.23453 - Should not happen based on existing pricing scheme but just in case
   const formattedPrice = (Math.floor(price * 100) / 100).toFixed(2);
 
   const template = {
     title: `Your next delivery for ${formattedCats}`,
     message: `Hey ${humanRecipient}! In two days' time, we'll be charging you for your next order for ${formattedCats}'s fresh food.`,
-    totalPrice: formattedPrice, // was not sure if we wanted the 2 decimals explicitly so I followed the example and forced them by making the price a string
+    totalPrice: `£${formattedPrice}`, // was not sure if we wanted the 2 decimals explicitly so I followed the example and forced them by making the price a string
     freeGift: +formattedPrice > FREE_GIFT_THRESHOLD,
   };
 
