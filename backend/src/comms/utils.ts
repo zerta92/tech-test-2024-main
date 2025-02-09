@@ -34,7 +34,7 @@ export const parseMessage = (deliveryData: NextDelivery): Message => {
       ? `${catNames.slice(0, -1).join(', ')} and ${catNames[catNames.length - 1]}`
       : catNames[0];
 
-  //Handle edge cases where the sum could be a non monetary value i.e: 120.23453 - Should not happen based on existing pricing scheme but just in case
+  //Handle edge cases where the sum could be a non monetary value i.e: 120.23453 - Should not happen based on existing pricing scheme but just in case - could also use `Intl.NumberFormat` for multi currency
   const formattedPrice = (Math.floor(price * 100) / 100).toFixed(2);
 
   const template = {
